@@ -2,6 +2,7 @@ export const config = {
 	resumeUrl: "https://resume.abhineshhh.me",
 	profile: {
 		name: "Abhinesh Jha",
+		firstName: "Abhinesh",
 	},
 	navigation: [
 		{ path: "#home", name: "Home" },

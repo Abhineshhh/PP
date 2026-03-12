@@ -46,7 +46,7 @@ export function Navbar() {
 		<aside className="-ml-[8px] mb-8 tracking-tight">
 			<div className="lg:sticky lg:top-20">
 				<nav
-					className="flex flex-col sm:flex-row relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative gap-3 sm:gap-0 sm:items-center sm:justify-between"
+					className="flex flex-col sm:flex-row relative px-0 pb-0 md:overflow-auto scroll-pr-6 md:relative gap-3 sm:gap-0 sm:items-center sm:justify-between"
 					id="nav"
 					aria-label="Main navigation"
 				>

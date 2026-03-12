@@ -2,6 +2,7 @@ import ArrowIcon from "./components/ArrowIcon";
 import Separator from "./components/separator";
 import ProjectCard from "./components/project-card";
 import AnimateIn from "./components/animate-in";
+import CopyEmail from "./components/copy-email";
 import { config } from "./config/config";
 
 export default function Page() {
@@ -9,18 +10,18 @@ export default function Page() {
         <section>
             {/* ===== HOME / HERO ===== */}
             <div id="home">
-                <AnimateIn delay={0}>
+                <AnimateIn>
                 <header className="mb-6">
                     <div className="flex items-center gap-3 mb-2 flex-wrap">
-                        <h1 className='font-medium text-2xl tracking-tight font-["monospace"]'>
-                            Hey, I&apos;m {config.profile.name} 
+                        <h1 className="font-medium text-2xl tracking-tight font-mono">
+                            Hey, I&apos;m {config.profile.name}
                         </h1>
                     </div>
-                    <p className="text-lg prose prose-neutral dark:prose-invert">
+                    <p className="text-lg text-neutral-700 dark:text-neutral-300">
                         I&apos;m a <strong>Backend-focused developer</strong> and{" "}
                         <strong>open-source contributor</strong> from India. I build
                         scalable systems, developer tools, and
-                        full-stack applications - always learning, always
+                        full-stack applications — always learning, always
                         shipping.
                     </p>
                 </header>
@@ -114,9 +115,9 @@ export default function Page() {
             </div>
 
             {/* ===== CONTACT ===== */}
-            <div id="contact" className="scroll-mt-16 mt-8 pb-16">
+            <div id="contact" className="scroll-mt-16 mt-8 pb-8">
                 <AnimateIn>
-                <h2 className="font-medium text-2xl mb-6 tracking-tighter text-neutral-900 dark:text-neutral-100">
+                <h2 className="font-medium text-2xl mb-4 tracking-tighter text-neutral-900 dark:text-neutral-100">
                     Contact
                 </h2>
 
@@ -124,32 +125,14 @@ export default function Page() {
                     <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-4 leading-relaxed">
                         Feel free to reach out to me via email:
                     </p>
-                    <a
-                        href={`mailto:${config.socials.email}`}
-                        className="inline-flex items-center gap-2 text-neutral-900 dark:text-neutral-100 hover:opacity-70 transition-all font-medium text-lg"
-                    >
-                        <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <rect width="20" height="16" x="2" y="4" rx="2" />
-                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                        </svg>
-                        <span>{config.socials.email}</span>
-                    </a>
+                    <CopyEmail email={config.socials.email} />
 
-                    <Separator />
+                    <hr className="mt-6 mb-4 border-neutral-200 dark:border-neutral-800" />
 
-                    <h3 className="font-medium text-xl tracking-tighter text-neutral-900 dark:text-neutral-100 mb-6">
+                    <h3 className="font-medium text-xl tracking-tighter text-neutral-900 dark:text-neutral-100 mb-4">
                         Find me elsewhere
                     </h3>
-                    <div className="flex flex-row items-center gap-6 mt-4">
+                    <div className="flex flex-row items-center gap-6">
                         <a
                             href={config.socials.github}
                             target="_blank"

@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 	description:
 		"Abhinesh Jha is a Backend-focused developer specializing in building scalable systems and developer tools with Java, Spring Boot, and Go.",
 	openGraph: {
-		title: "Abhinesh Jha — Full Stack Developer",
+		title: "Abhinesh Jha — Backend Developer",
 		description:
-			"Full Stack Developer & open-source contributor specializing in Java, Spring Boot, Next.js & TypeScript.",
+			"Backend-focused developer & open-source contributor specializing in Java, Spring Boot, Go, and full-stack applications.",
 		url: "https://abhineshhh.me",
 		siteName: "Abhinesh Jha",
 		locale: "en_US",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: "summary",
-		title: "Abhinesh Jha — Full Stack Developer",
+		title: "Abhinesh Jha — Backend Developer",
 		description:
-			"Full Stack Developer & open-source contributor specializing in Java, Spring Boot, Next.js & TypeScript.",
+			"Backend-focused developer & open-source contributor specializing in Java, Spring Boot, Go, and full-stack applications.",
 	},
 	robots: {
 		index: true,
@@ -46,12 +46,14 @@ export default function RootLayout({
 		<html
 			lang="en"
 			className={cx(
-				"text-black bg-white dark:text-white dark:bg-[#111010]",
 				GeistSans.variable,
 				GeistMono.variable
 			)}
+			suppressHydrationWarning
 		>
-			<body className="antialiased max-w-2xl flex flex-col md:flex-row mx-auto px-4 mt-8">
+			<head>
+			</head>
+			<body className="antialiased text-black bg-white dark:text-white dark:bg-[#111010] max-w-2xl flex flex-col md:flex-row mx-auto px-4 mt-8">
 				<a
 					href="#main-content"
 					className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black dark:focus:bg-neutral-900 dark:focus:text-white"

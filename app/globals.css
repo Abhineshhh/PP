@@ -12,26 +12,8 @@ html {
 	scroll-behavior: smooth;
 }
 
-.prose .anchor {
-	@apply absolute invisible no-underline;
-	margin-left: -1em;
-	padding-right: 0.5em;
-	width: 80%;
-	max-width: 700px;
-	cursor: pointer;
-}
-
 .prose a {
 	@apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
-}
-
-.prose .anchor:after {
-	@apply text-neutral-300 dark:text-neutral-700;
-	content: "#";
-}
-
-.prose *:hover > .anchor {
-	@apply visible;
 }
 
 .prose pre {
@@ -78,15 +60,4 @@ pre::-webkit-scrollbar {
 pre {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
-}
-
-input[type="text"],
-input[type="email"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-.title {
-	text-wrap: balance;
 }
